@@ -4,9 +4,6 @@ import { Product } from "./product-data";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { connectToDb } from "./api/db";
-
-export const dynamic = 'force-dynamic';
 
 export default function ProductList ({products, initialCartProducts=[]}: { products: Product[], initialCartProducts: Product[]}) {
   
