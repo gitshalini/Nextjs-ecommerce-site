@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Product } from "../product-data";
 import Link from "next/link";
 
-export const dynamic = 'force-dynamic';
 
 export default function ShoppingCartList({initialCartProducts}: {initialCartProducts: Product[]}) {
   const [cartProducts, setCartProducts] = useState(initialCartProducts);
